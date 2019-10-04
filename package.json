@@ -6,6 +6,7 @@
   "scripts": {
     "clean": "rm -rf lib",
     "build": "npm run clean && babel src --out-dir lib",
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -31,5 +32,9 @@
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.6",
     "eslint": "^5.16.0"
-  }
+  },
+  "files": [
+    "lib",
+    "src"
+  ]
 }
