@@ -1,0 +1,35 @@
+{
+  "name": "jservice-common",
+  "version": "0.1.0",
+  "description": "Collection of common services for JService",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf lib",
+    "build": "npm run clean && babel src --out-dir lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhaldkhein/jservice-common.git"
+  },
+  "author": "RhaldKhein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rhaldkhein/jservice-common/issues"
+  },
+  "homepage": "https://github.com/rhaldkhein/jservice-common#readme",
+  "dependencies": {
+    "lodash.set": "^4.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-es2016": "^7.0.0-beta.53",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
+    "eslint": "^5.16.0"
+  }
+}
