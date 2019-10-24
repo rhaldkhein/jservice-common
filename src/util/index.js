@@ -5,6 +5,7 @@ class Util {
   _core = null
 
   constructor(provider, custom) {
+    custom = typeof custom === 'function' ? custom(provider) : custom
     this._core = provider.get('core')
     for (const key in custom) {
       if (this[key]) {
